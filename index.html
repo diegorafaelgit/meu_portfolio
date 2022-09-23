@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,74 +39,113 @@
             </div>
         </div>
     </nav>
-    <div id="conteudo">
+    <div class="container-fluid" id="conteudo">
         <section id="home">
-            <figure>
-                <img src="images/perfil.jpg" alt="Foto de Diego Rafael Thomas">
-            </figure>
-            <div>
-                <p>Olá, meu nome é Diego Thomas</p>
-                <p>Desenvolvedor Web</p>
+            <div class="container">
+                <div class="row">
+                    <div style="display: flex; height: 500px;">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 align-self-center">
+                            <img src="images/avatar.png" alt="" width="250px">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 align-self-center">
+                            <h1>Olá, meu nome é Diego Thomas</h1>
+                            <p>Desenvolvedor Web</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="sobre_mim">
-            <h1>Sobre mim</h1>
-            <p>Meu nome é Diego, e desde pequeno sou apaixonado por tecnologia, desde os video-games antigos, até o
-                computador de mesa com internet discada. Criei um objetivo pessoal de evoluir meus conhecimentos e viver
-                da
-                área de TI.
-                Sou formado em Técnico de Informatica para Internet pela ETEC de Mogi Mirim, e estou cursando Sistemas
-                para
-                Internet na FATEC Araras.
-                Já possuo certa experiência na área, e atualmente sou DEV Jr. do Data Center Itaú, trabalhando com
-                técnologias como
-                Bootstrap, JQuery, Python, etc.
-            </p>
-        </section>
-
-        <section id="habilidades">
-            <h1>Minhas Habilidades</h1>
-            <div style="display:flex;">
-                <figure>
-                    <img src="images/html_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/css_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/js_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/jquery_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/py_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/php_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/ps_logo_inicio.png" alt="" width="100px">
-                </figure>
-                <figure>
-                    <img src="images/git_logo_inicio.png" alt="" width="100px">
-                </figure>
+            <h1 style="text-align: center;">Sobre mim</h1>
+            <div class="container">
+                <div class="row">
+                    <div style="display: flex; height: 500px;">
+                        <p>Meu nome é Diego, e desde pequeno sou apaixonado por tecnologia, desde os video-games
+                            antigos,
+                            até o
+                            computador de mesa com internet discada. Criei um objetivo pessoal de evoluir meus
+                            conhecimentos
+                            e viver
+                            da
+                            área de TI.
+                            Sou formado em Técnico de Informatica para Internet pela ETEC de Mogi Mirim, e estou
+                            cursando
+                            Sistemas
+                            para
+                            Internet na FATEC Araras.
+                            Já possuo certa experiência na área, e atualmente sou DEV Jr. do Data Center Itaú,
+                            trabalhando
+                            com
+                            técnologias como
+                            Bootstrap, JQuery, Python, etc.
+                        </p>
+                        <figure>
+                            <img src="images/perfil.jpg" alt="Foto de Diego Rafael Thomas" width="250px">
+                        </figure>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="projetos">
+        <section id="habilidades" style="text-align: center; height: 500px;">
+            <h1>Minhas Habilidades</h1>
+            <div class="container">
+                <div class="row align-items-cente">
+                    <div style="display:flex;">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                            <figure>
+                                <img src="images/html_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                            <figure>
+                                <img src="images/css_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                            <figure>
+                                <img src="images/js_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                            <figure>
+                                <img src="images/jquery_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                            <figure>
+                                <img src="images/py_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                            <figure>
+                                <img src="images/php_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                            <figure>
+                                <img src="images/ps_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                            <figure>
+                                <img src="images/git_logo_inicio.png" alt="" width="100px">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" style="text-align: center; height: 500px;">
             <h1>Meus Projetos</h1>
-            <div style="display:flex;">
-                <figure>
-                    <img src="images/promogames_logo.png" alt="" width="250px">
-                </figure>
-                <figure>
-                    <img src="images/agatetepe_logo.png" alt="" width="250px">
-                </figure>
-                <figure>
-                    <img src="images/meuplay_logo.png" alt="" width="250px">
-                </figure>
+            <div class="container">
+                <div class="row">
+                    <div style="display:flex;">
+                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                            <img src="images/promogames_logo.png" alt="" width="250px">
+                        </figure>
+                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                            <img src="images/agatetepe_logo.png" alt="" width="250px">
+                        </figure>
+                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                            <img src="images/meuplay_logo.png" alt="" width="250px">
+                        </figure>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

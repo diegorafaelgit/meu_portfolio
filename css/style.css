@@ -1,8 +1,13 @@
-.conteudo {
-    background-color: blue;
+#conteudo {
+    background-color: #003ba1;
+}
+
+h1,
+p {
+    color: white;
 }
 
 footer {
-    background-color: blue;
+    background-color: black;
     color: white;
 }
