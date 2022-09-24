@@ -1,5 +1,5 @@
 #conteudo {
-    background-color: #003ba1;
+    background-color: black;
 }
 
 h1,
@@ -7,7 +7,21 @@ p {
     color: white;
 }
 
+.name {
+    color: #1496BB;
+}
+
+#sobre_mim {
+    background-color: grey;
+}
+
+#projetos {
+    background-color: grey;
+}
+
 footer {
     background-color: black;
     color: white;
 }
+
+/* #1496BB */
