@@ -7,21 +7,40 @@ p {
     color: white;
 }
 
-.name {
+#apresentacao {
+    font-size: 30pt;
+}
+
+#name {
     color: #1496BB;
+    font-size: 35pt;
+}
+
+#funcao {
+    font-size: 20pt;
+}
+
+#home {
+    background-color: black;
+}
+
+#home_conteudo {
+    display: flex;
 }
 
 #sobre_mim {
-    background-color: grey;
+    background-color: rgb(30, 30, 30);
+}
+
+#habilidades {
+    background-color: black;
 }
 
 #projetos {
-    background-color: grey;
+    background-color: rgb(30, 30, 30);
 }
 
 footer {
     background-color: black;
     color: white;
 }
-
-/* #1496BB */

@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -39,174 +39,134 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" id="conteudo">
-        <section id="home">
-            <div class="container">
-                <div class="row">
-                    <div style="display: flex; height: 500px;">
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center" style="margin-left: 150px;">
-                            <img src="images/avatar.png" alt="" width="250px">
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 align-self-center">
-                            <h1>Olá, meu nome é <br><span class="name"> DIEGO THOMAS</span></h1>
-                            <p>Desenvolvedor Web</p>
+    <section id="home" class="col-sm-12 col-md-12 col-lg-12">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="home_conteudo" style="height: 600px;">
+                    <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div style="margin-left: 30%;">
+                            <h1 id="apresentacao">Olá, meu nome é <br><span id="name"> DIEGO THOMAS</span></h1>
+                            <p id="funcao">Desenvolvedor Web</p>
                             <button type="button" class="btn btn-outline-info">Linkedin</button>
                             <button type="button" class="btn btn-outline-info">GitHub</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre_mim">
-            <h1 style="text-align: center;">SOBRE MIM</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div style="display: flex; height: 500px;">
-                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 align-self-center" style="margin-left: 150px;">
-                            <p>Meu nome é Diego, e desde pequeno sou apaixonado por tecnologia, desde os video-games
-                                antigos,
-                                até o
-                                computador de mesa com internet discada. Criei um objetivo pessoal de evoluir meus
-                                conhecimentos
-                                e viver
-                                da
-                                área de TI.
-                                Sou formado em Técnico de Informatica para Internet pela ETEC de Mogi Mirim, e estou
-                                cursando
-                                Sistemas
-                                para
-                                Internet na FATEC Araras.
-                                Já possuo certa experiência na área, e atualmente sou DEV Jr. do Data Center Itaú,
-                                trabalhando
-                                com
-                                técnologias como
-                                Bootstrap, JQuery, Python, etc.
-                            </p>
-                        </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center" style="margin-left: 50px;">
-                            <img src="images/perfil.jpg" alt="Foto de Diego Rafael Thomas" width="250px">
+                    <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div style="margin-left: 50px;">
+                            <img src="images/img_home.png" alt="" width="70%">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="habilidades" style="text-align: center; height: 500px;">
-            <h1>MINHAS HABILIDADES</h1>
-            <div class="container-fluid">
-                <div class="row align-items-cente">
-                    <div style="display:flex;">
-                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                            <figure>
-                                <img src="images/html_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                            <figure>
-                                <img src="images/css_logo_inicio.png" alt="" width="100px">
-                            </figure>
+    <section id="sobre_mim" style="padding: 30px;">
+        <h1 style="text-align: center;">SOBRE MIM</h1>
+        <div class="container">
+            <div class="row">
+                <div style="display: flex; height: 500px;">
+                    <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div style="margin-left: 30%;">
+                            <img src="images/minha_foto.png" alt="Foto de Diego Rafael Thomas" width="70%">
                         </div>
-                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                            <figure>
-                                <img src="images/js_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                            <figure>
-                                <img src="images/jquery_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                        </div>
-                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                            <figure>
-                                <img src="images/py_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                            <figure>
-                                <img src="images/php_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                        </div>
-                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                            <figure>
-                                <img src="images/ps_logo_inicio.png" alt="" width="100px">
-                            </figure>
-                            <figure>
-                                <img src="images/git_logo_inicio.png" alt="" width="100px">
-                            </figure>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 align-self-center" style="font-size: 1.3em;">
+                        <p>Meu nome é Diego, apaixonado por tecnologia
+                            desde pequeno quando minha mãe me presenteou com
+                            um Master System.<br><br>
+                            Atualmente cursando Sistemas para Internet na FATEC Araras e
+                            trabalhando como DEV Jr., utilizando tecnologias como
+                            Bootstrap, JQuery, Python, etc.
+                        </p>
+                        <div class="text-center pt-2">
+                            <button type="button" class="btn btn-outline-info">Download Curriculo</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projetos" style="text-align: center; height: 500px;">
-            <h1>MEUS PROJETOS</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div style="display:flex;">
-                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                            <img src="images/promogames_logo.png" alt="" width="250px">
+    <section id="habilidades" style="text-align: center; height: 500px; padding: 30px;">
+        <h1>MINHAS HABILIDADES</h1>
+        <div class="container">
+            <div class="row align-items-center">
+                <h2 style="color: white;">Muito Bom</h2>
+                <div style="display:flex;">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/html_logo.png" alt="" width="100px">
                         </figure>
-                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                            <img src="images/agatetepe_logo.png" alt="" width="250px">
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/css_logo.png" alt="" width="100px">
                         </figure>
-                        <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                            <img src="images/meuplay_logo.png" alt="" width="250px">
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/ps_logo.png" alt="" width="100px">
+                        </figure>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/php_logo.png" alt="" width="100px">
+                        </figure>
+                    </div>
+                </div>
+                <h2 style="color: white;">Aprendendo</h2>
+                <div style="display:flex;">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/python_logo.png" alt="" width="100px">
+                        </figure>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/github_logo.png" alt="" width="100px">
+                        </figure>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/bootstrap_logo.png" alt="" width="100px">
+                        </figure>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
+                        <figure>
+                            <img src="images/js_logo.png" alt="" width="100px">
                         </figure>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section id="projetos" style="text-align: center; height: 500px; padding: 30px;">
+        <h1>MEUS PROJETOS</h1>
+        <div class="container">
+            <div class="row">
+                <div style="display:flex;">
+                    <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                        <img src="images/logo-promogames.png" alt="" width="50%">
+                    </figure>
+                    <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                        <img src="images/logo-agatetepe.png" alt="" width="50%">
+                    </figure>
+                    <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                        <img src="images/logo-meuplay.png" alt="" width="50%">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
 
-    <footer class="footer position-fixed-bottom">
+    <footer class="footer position-fixed-bottom" style="text-align: center;">
         <div class="container">
             <span>Criado por Diego Rafael Thomas</span>
         </div>
     </footer>
-    </div>
-    <!-- <div class="corpo">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Conhecimento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Profissional</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-
-            <main role="main" class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="teste">
-                            <div class="img_perfil">
-                                <img src="images/perfil.jpg" alt="">
-                            </div>
-                            <div>
-                                <h1>Diego Rafael Thomas</h1>
-                                <p>Desenvolvedor Web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-
-            <footer class="footer position-fixed-bottom">
-                <div class="container">
-                    <span>Criado por Diego Rafael Thomas</span>
-                </div>
-            </footer>
-        </div>
-    </div> -->
 </body>
 
 <!-- JavaScript Bundle with Popper -->
