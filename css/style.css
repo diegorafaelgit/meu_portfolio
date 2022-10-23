@@ -36,8 +36,22 @@ p {
     background-color: black;
 }
 
+.t-modal .modal-content {
+    border-color: #1496BB;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    text-align: left;
+}
+
 #projetos {
     background-color: rgb(30, 30, 30);
+}
+
+.p-modal .modal-content {
+    border-color: #1496BB;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    text-align: left;
 }
 
 footer {

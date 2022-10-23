@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 
@@ -24,16 +25,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">SOBRE MIM</a>
+                        <a class="nav-link active" aria-current="page" href="#sobre_mim">SOBRE MIM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HABILIDADES</a>
+                        <a class="nav-link active" aria-current="page" href="#habilidades">HABILIDADES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">PROJETOS</a>
+                        <a class="nav-link active" aria-current="page" href="#projetos">PROJETOS</a>
                     </li>
                 </ul>
             </div>
@@ -47,8 +48,10 @@
                         <div style="margin-left: 30%;">
                             <h1 id="apresentacao">Olá, meu nome é <br><span id="name"> DIEGO THOMAS</span></h1>
                             <p id="funcao">Desenvolvedor Web</p>
-                            <button type="button" class="btn btn-outline-info">Linkedin</button>
-                            <button type="button" class="btn btn-outline-info">GitHub</button>
+                            <a href="https://www.linkedin.com/in/diego-thomas-6a2a19bb/" target="_blank"><button
+                                    type="button" class="btn btn-outline-info">Linkedin</button></a>
+                            <a href="https://github.com/diegorafaelgit" target="_blank"><button type="button"
+                                    class="btn btn-outline-info">GitHub</button></a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
@@ -77,10 +80,11 @@
                             um Master System.<br><br>
                             Atualmente cursando Sistemas para Internet na FATEC Araras e
                             trabalhando como DEV Jr., utilizando tecnologias como
-                            Bootstrap, JQuery, Python, etc.
+                            Python, JQuery, Bootstrap etc.
                         </p>
                         <div class="text-center pt-2">
-                            <button type="button" class="btn btn-outline-info">Download Curriculo</button>
+                            <a href="doc/Diego Rafael Thomas - Curriculo.pdf" target="_blank"><button type="button"
+                                    class="btn btn-outline-info">Download Curriculo</button></a>
                         </div>
                     </div>
                 </div>
@@ -88,54 +92,78 @@
         </div>
     </section>
 
-    <section id="habilidades" style="text-align: center; height: 500px; padding: 30px;">
+    <section id="habilidades" style="text-align: center; height: 600px; padding: 30px;">
         <h1>MINHAS HABILIDADES</h1>
         <div class="container">
             <div class="row align-items-center">
-                <h2 style="color: white;">Muito Bom</h2>
-                <div style="display:flex;">
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/html_logo.png" alt="" width="100px">
-                        </figure>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/css_logo.png" alt="" width="100px">
-                        </figure>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/ps_logo.png" alt="" width="100px">
-                        </figure>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/php_logo.png" alt="" width="100px">
-                        </figure>
+                <div style="margin-top: 10px;">
+                    <h2 style="color: white;">Ferramentas que tenho domínio</h2>
+                    <div style="display:flex; margin-top: 30px;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center"></div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_html" src="images/html_logo.png" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_css" src="images/css_logo.png" width="80px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_ps" src="images/ps_logo.png" width="90px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_php" src="images/php_logo.png" width="120px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center"></div>
                     </div>
                 </div>
-                <h2 style="color: white;">Aprendendo</h2>
-                <div style="display:flex;">
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/python_logo.png" alt="" width="100px">
-                        </figure>
+                <div style="margin-top: 10px;">
+                    <h2 style="color: white;">Ferramentas que estou aprendendo</h2>
+                    <div style="display:flex; margin-top: 20px;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center"></div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_python" src="images/python_logo.png" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_github" src="images/github_logo.png" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_bootstrap" src="images/bootstrap_logo.png" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center">
+                            <figure>
+                                <input type="image" id="img_js" src="images/js_logo.png" width="100px">
+                            </figure>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 align-self-center"></div>
                     </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/github_logo.png" alt="" width="100px">
-                        </figure>
+                </div>
+                <p style="font-size: 16pt; margin-top: 10px;">Clique nos ícones para saber mais sobre a ferramenta</p>
+            </div>
+        </div>
+        <div class="modal t-modal" id="modal_habilidades" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal_titulo"></h1>
+                        <button type="button" class="btn-close btn-close-white" id="fecha_modal" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/bootstrap_logo.png" alt="" width="100px">
-                        </figure>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 align-self-center">
-                        <figure>
-                            <img src="images/js_logo.png" alt="" width="100px">
-                        </figure>
+                    <div class="modal-body">
+                        <p id="modal_conteudo"></p>
                     </div>
                 </div>
             </div>
@@ -146,16 +174,67 @@
         <h1>MEUS PROJETOS</h1>
         <div class="container">
             <div class="row">
-                <div style="display:flex;">
+                <div style="display:flex; margin-top: 20px;">
                     <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                        <img src="images/logo-promogames.png" alt="" width="50%">
+                        <input type="image" id="img_promogames" src="images/logo-promogames.png" width="200px">
                     </figure>
                     <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                        <img src="images/logo-agatetepe.png" alt="" width="50%">
+                        <input type="image" id="img_agatetepe" src="images/logo-agatetepe.png" width="170px">
                     </figure>
                     <figure class="col-4 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                        <img src="images/logo-meuplay.png" alt="" width="50%">
+                        <input type="image" id="img_meuplay" src="images/logo-meuplay.png" width="150px">
                     </figure>
+                </div>
+                <p style="font-size: 16pt; margin-top: 10px;">Clique nos ícones para saber mais sobre o projeto</p>
+            </div>
+        </div>
+        <div class="modal p-modal" id="modal_projetos" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal_titulo2"></h1>
+                        <button type="button" class="btn-close btn-close-white" id="fecha_modal2"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xl-12">
+                                    <p id="modal_conteudo2"></p>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xl-12">
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="" id="img_carrossel1" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="" id="img_carrossel2" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="" id="img_carrossel3" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a id="link" href="" target="_blank"><button type="button" class="btn btn-outline-info">Link do
+                                Projeto</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,14 +243,20 @@
 
     <footer class="footer position-fixed-bottom" style="text-align: center;">
         <div class="container">
-            <span>Criado por Diego Rafael Thomas</span>
+            <span id="footer">Criado por Diego Rafael Thomas</span>
         </div>
     </footer>
 </body>
 
-<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 
 </html>
