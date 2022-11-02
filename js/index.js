@@ -1,5 +1,5 @@
 $('#img_html').click(function () {
-    $('#modal_habilidades').show()
+    $('#modal_habilidades').show(1000)
     $('#modal_titulo').text('HTML')
     $('#modal_conteudo').text('HTML é uma linguagem de marcação utilizada para a construção de páginas web.\
     Eu aprendi HTML em 2018, e desde então venho aperfeiçoando essa habilidade. Atualmente trabalho\
@@ -92,4 +92,7 @@ $('#img_meuplay').click(function () {
 
 $('#fecha_modal2').click(function () {
     $('#modal_projetos').hide()
+})
+$('#btn_responsivo').click(function () {
+    $('.show').remove()
 })

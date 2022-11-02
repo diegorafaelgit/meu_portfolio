@@ -1,3 +1,23 @@
+#logo {
+    margin-right: 500px;
+}
+
+#link_home:hover {
+    text-decoration: underline #1496BB;
+}
+
+#link_sobre:hover {
+    text-decoration: underline #1496BB;
+}
+
+#link_hab:hover {
+    text-decoration: underline #1496BB;
+}
+
+#link_proj:hover {
+    text-decoration: underline #1496BB;
+}
+
 #conteudo {
     background-color: black;
 }
@@ -26,14 +46,76 @@ p {
 
 #home_conteudo {
     display: flex;
+    height: 750px;
+}
+
+#div_apresentacao {
+    margin-left: 30%;
+}
+
+#div_img_home {
+    margin-left: 50px;
 }
 
 #sobre_mim {
     background-color: rgb(30, 30, 30);
+    padding: 30px;
+    height: 750px;
+}
+
+#sobre_mim_corpo {
+    margin-top: 50px;
+}
+
+#sobre_mim_titulo {
+    text-align: center;
+}
+
+#sobre_mim_conteudo {
+    display: flex;
+    height: 400px;
+}
+
+#sobre_mim_img {
+    margin-left: 30%;
+}
+
+#sobre_mim_texto {
+    font-size: 1.3em;
 }
 
 #habilidades {
     background-color: black;
+    text-align: center;
+    height: 800px;
+    padding: 30px;
+}
+
+#hab_corpo {
+    margin-top: 100px;
+}
+
+.hab_itens {
+    margin-top: 10px;
+}
+
+.hab_h2 {
+    color: white;
+}
+
+.hab_icones {
+    display: flex;
+    margin-top: 30px;
+}
+
+#hab_legenda {
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+.img_hab:hover {
+    transform: scale(1.2);
+    transition: ease 0.3s;
 }
 
 .t-modal .modal-content {
@@ -45,6 +127,28 @@ p {
 
 #projetos {
     background-color: rgb(30, 30, 30);
+    text-align: center;
+    height: 800px;
+    padding: 30px;
+}
+
+#proj_corpo {
+    margin-top: 200px;
+}
+
+#proj_icones {
+    display: flex;
+    margin-top: 20px;
+}
+
+#proj_legenda {
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+.img_proj:hover {
+    transform: scale(1.2);
+    transition: ease 0.3s;
 }
 
 .p-modal .modal-content {
@@ -57,4 +161,118 @@ p {
 footer {
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #home_conteudo {
+        display: block;
+    }
+
+    #div_apresentacao {
+        text-align: center;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #div_img_home {
+        text-align: center;
+        margin: auto;
+    }
+
+
+    #sobre_mim_conteudo {
+        display: block;
+    }
+
+    #sobre_mim_texto {
+        text-align: center;
+    }
+
+    #sobre_mim_img {
+        margin: auto;
+        text-align: center;
+    }
+
+    .hab_icones {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    #div_css {
+        margin-left: 10%;
+    }
+
+    #div_ps {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #div_php {
+        margin-right: 10%;
+    }
+
+    .hab_div_esp {
+        display: none;
+    }
+
+    #img_html {
+        width: 70px;
+    }
+
+    #img_css {
+        width: 50px;
+    }
+
+    #img_ps {
+        width: 60px;
+    }
+
+    #img_php {
+        width: 70px;
+    }
+
+    #div_github {
+        margin-left: 10%;
+    }
+
+    #div_bootstrap {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #div_js {
+        margin-right: 10%;
+    }
+
+    #img_python {
+        width: 60px;
+    }
+
+    #img_github {
+        width: 60px;
+    }
+
+    #img_bootstrap {
+        width: 60px;
+    }
+
+    #img_js {
+        width: 70px;
+    }
+
+    #img_promogames {
+        width: 90px;
+    }
+
+    #img_agatetepe {
+        width: 80px;
+    }
+
+    #img_meuplay {
+        width: 70px;
+    }
+
+
+
 }
