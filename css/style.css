@@ -4,27 +4,22 @@
 
 #link_home:hover {
     text-decoration: underline #1496BB;
+    transition: ease 0.3s;
 }
 
 #link_sobre:hover {
     text-decoration: underline #1496BB;
+    transition: ease 0.3s;
 }
 
 #link_hab:hover {
     text-decoration: underline #1496BB;
+    transition: ease 0.3s;
 }
 
 #link_proj:hover {
     text-decoration: underline #1496BB;
-}
-
-#conteudo {
-    background-color: black;
-}
-
-h1,
-p {
-    color: white;
+    transition: ease 0.3s;
 }
 
 #apresentacao {
@@ -36,29 +31,46 @@ p {
     font-size: 35pt;
 }
 
+#name::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.img_home {
+    transform: scale(1.2);
+    transition: ease 0.3s;
+}
+
 #funcao {
-    font-size: 20pt;
+    font-size: 26pt;
 }
 
 #home {
-    background-color: black;
+    background-color: #D3D3D3;
 }
 
 #home_conteudo {
     display: flex;
-    height: 750px;
+    height: 700px;
 }
 
 #div_apresentacao {
     margin-left: 30%;
 }
 
-#div_img_home {
-    margin-left: 50px;
-}
-
 #sobre_mim {
-    background-color: rgb(30, 30, 30);
+    background-color: #DCDCDC;
     padding: 30px;
     height: 750px;
 }
@@ -85,7 +97,7 @@ p {
 }
 
 #habilidades {
-    background-color: black;
+    background-color: #D3D3D3;
     text-align: center;
     height: 800px;
     padding: 30px;
@@ -97,10 +109,6 @@ p {
 
 .hab_itens {
     margin-top: 10px;
-}
-
-.hab_h2 {
-    color: white;
 }
 
 .hab_icones {
@@ -126,7 +134,7 @@ p {
 }
 
 #projetos {
-    background-color: rgb(30, 30, 30);
+    background-color: #DCDCDC;
     text-align: center;
     height: 800px;
     padding: 30px;
@@ -162,6 +170,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    height: 50px;
 }
 
 @media screen and (max-width: 600px) {
