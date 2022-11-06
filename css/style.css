@@ -72,7 +72,7 @@
 #sobre_mim {
     background-color: #DCDCDC;
     padding: 30px;
-    height: 750px;
+    height: 700px;
 }
 
 #sobre_mim_corpo {
@@ -98,32 +98,98 @@
 
 #habilidades {
     background-color: #D3D3D3;
-    text-align: center;
-    height: 800px;
+    height: 700px;
     padding: 30px;
 }
 
+#hab_titulo {
+    text-align: center;
+}
+
 #hab_corpo {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
-.hab_itens {
-    margin-top: 10px;
-}
-
-.hab_icones {
+#hab_itens {
     display: flex;
-    margin-top: 30px;
 }
 
-#hab_legenda {
-    font-size: 16pt;
-    margin-top: 10px;
+.progress-title {
+    width: 100%;
+    height: auto;
 }
 
-.img_hab:hover {
-    transform: scale(1.2);
-    transition: ease 0.3s;
+.progress-title h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress .progress-bar {
+    border: 1px;
+    border-radius: 20px;
+    animation: animate-positive 2s;
+}
+
+.progress .legenda {
+    border-radius: 0;
+}
+
+#html_bar {
+    background: #0000CD;
+}
+
+#css_bar {
+    background: #4169E1;
+}
+
+#js_bar {
+    background: #1E90FF;
+}
+
+#php_bar {
+    background: #4169E1;
+}
+
+#py_bar {
+    background: #1E90FF;
+}
+
+#bt_bar {
+    background: #1E90FF;
+}
+
+#ps_bar {
+    background: #0000CD;
+}
+
+#leg1 {
+    background: #00BFFF;
+}
+
+#leg2 {
+    background: #1E90FF;
+}
+
+#leg3 {
+    background: #4169E1;
+}
+
+#leg4 {
+    background: #0000CD;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
 }
 
 .t-modal .modal-content {
@@ -136,16 +202,21 @@
 #projetos {
     background-color: #DCDCDC;
     text-align: center;
-    height: 800px;
+    height: 600px;
     padding: 30px;
 }
 
 #proj_corpo {
-    margin-top: 200px;
+    margin-top: 50px;
+}
+
+#proj_conteudo {
+    display: flex;
 }
 
 #proj_icones {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -161,21 +232,20 @@
 
 .p-modal .modal-content {
     border-color: #1496BB;
-    background-color: rgb(30, 30, 30);
-    color: #fff;
     text-align: left;
 }
 
 footer {
-    background-color: black;
+    background-color: #1496BB;
     color: white;
     text-align: center;
-    height: 50px;
+    height: 30px;
 }
 
 @media screen and (max-width: 600px) {
     #home_conteudo {
         display: block;
+        height: 500px;
     }
 
     #div_apresentacao {
@@ -185,13 +255,19 @@ footer {
     }
 
     #div_img_home {
-        text-align: center;
-        margin: auto;
+        display: none;
     }
 
+    #sobre_mim {
+        height: 800px;
+    }
 
     #sobre_mim_conteudo {
         display: block;
+    }
+
+    #sobre_mim_corpo {
+        margin-top: 10px;
     }
 
     #sobre_mim_texto {
@@ -203,85 +279,32 @@ footer {
         text-align: center;
     }
 
-    .hab_icones {
-        display: flex;
-        margin-top: 30px;
+    #hab_itens {
+        display: grid;
     }
 
-    #div_css {
-        margin-left: 10%;
-    }
-
-    #div_ps {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #div_php {
-        margin-right: 10%;
-    }
-
-    .hab_div_esp {
-        display: none;
-    }
-
-    #img_html {
-        width: 70px;
-    }
-
-    #img_css {
-        width: 50px;
-    }
-
-    #img_ps {
-        width: 60px;
-    }
-
-    #img_php {
-        width: 70px;
-    }
-
-    #div_github {
-        margin-left: 10%;
-    }
-
-    #div_bootstrap {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #div_js {
-        margin-right: 10%;
-    }
-
-    #img_python {
-        width: 60px;
-    }
-
-    #img_github {
-        width: 60px;
-    }
-
-    #img_bootstrap {
-        width: 60px;
-    }
-
-    #img_js {
-        width: 70px;
+    #projetos {
+        height: 750px;
     }
 
     #img_promogames {
-        width: 90px;
+        width: 90%;
     }
 
     #img_agatetepe {
-        width: 80px;
+        width: 80%;
     }
 
     #img_meuplay {
-        width: 70px;
+        width: 70%;
     }
 
+    #proj_icones {
+        display: block;
+    }
 
+    #proj_corpo {
+        margin-top: 10px;
+    }
 
 }
