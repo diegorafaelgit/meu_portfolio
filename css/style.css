@@ -1,25 +1,29 @@
-#logo {
-    margin-right: 500px;
+html {
+    scroll-behavior: smooth;
 }
 
 #link_home:hover {
     text-decoration: underline #1496BB;
     transition: ease 0.3s;
+    color: #1496BB;
 }
 
 #link_sobre:hover {
     text-decoration: underline #1496BB;
     transition: ease 0.3s;
+    color: #1496BB;
 }
 
 #link_hab:hover {
     text-decoration: underline #1496BB;
     transition: ease 0.3s;
+    color: #1496BB;
 }
 
 #link_proj:hover {
     text-decoration: underline #1496BB;
     transition: ease 0.3s;
+    color: #1496BB;
 }
 
 #apresentacao {
@@ -63,6 +67,7 @@
 #home_conteudo {
     display: flex;
     height: 700px;
+    margin-top: 1%;
 }
 
 #div_apresentacao {
@@ -98,7 +103,7 @@
 
 #habilidades {
     background-color: #D3D3D3;
-    height: 700px;
+    height: 750px;
     padding: 30px;
 }
 
@@ -192,13 +197,6 @@
     }
 }
 
-.t-modal .modal-content {
-    border-color: #1496BB;
-    background-color: rgb(30, 30, 30);
-    color: #fff;
-    text-align: left;
-}
-
 #projetos {
     background-color: #DCDCDC;
     text-align: center;
@@ -251,7 +249,7 @@ footer {
     #div_apresentacao {
         text-align: center;
         margin: auto;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #div_img_home {
@@ -267,7 +265,7 @@ footer {
     }
 
     #sobre_mim_corpo {
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     #sobre_mim_texto {
@@ -279,12 +277,16 @@ footer {
         text-align: center;
     }
 
+    #habilidades {
+        height: 800px;
+    }
+
     #hab_itens {
         display: grid;
     }
 
     #projetos {
-        height: 750px;
+        height: 800px;
     }
 
     #img_promogames {
@@ -304,7 +306,7 @@ footer {
     }
 
     #proj_corpo {
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
 }
