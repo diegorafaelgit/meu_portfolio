@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #link_home:hover {
     text-decoration: underline #1496BB;
     transition: ease 0.3s;
@@ -32,7 +36,11 @@ html {
 
 #name {
     color: #1496BB;
-    font-size: 35pt;
+    font-size: 40pt;
+}
+
+#funcao {
+    font-size: 30pt;
 }
 
 #name::after {
@@ -233,6 +241,10 @@ html {
     text-align: left;
 }
 
+#modal_conteudo2 {
+    text-align: left;
+}
+
 footer {
     background-color: #1496BB;
     color: white;
@@ -243,7 +255,20 @@ footer {
 @media screen and (max-width: 600px) {
     #home_conteudo {
         display: block;
-        height: 500px;
+        height: 450px;
+    }
+
+    #apresentacao {
+        font-size: 25pt;
+    }
+
+    #name {
+        color: #1496BB;
+        font-size: 30pt;
+    }
+
+    #funcao {
+        font-size: 25pt;
     }
 
     #div_apresentacao {
