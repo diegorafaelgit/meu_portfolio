@@ -82,6 +82,24 @@ body {
     margin-left: 30%;
 }
 
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 #sobre_mim {
     background-color: #DCDCDC;
     padding: 30px;
