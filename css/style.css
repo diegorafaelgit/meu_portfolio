@@ -352,4 +352,12 @@ footer {
         margin-top: 30px;
     }
 
+    [data-anime="left"] {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    [data-anime="right"] {
+        transform: translate3d(10px, 0, 0);
+    }
+
 }
