@@ -4,43 +4,46 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #000;
+}
+
+nav {
+    opacity: .9;
 }
 
 #link_home:hover {
-    text-decoration: underline #1496BB;
     transition: ease 0.3s;
-    color: #1496BB;
+    color: #00b8e4;
 }
 
 #link_sobre:hover {
-    text-decoration: underline #1496BB;
     transition: ease 0.3s;
-    color: #1496BB;
+    color: #00b8e4;
 }
 
 #link_hab:hover {
-    text-decoration: underline #1496BB;
     transition: ease 0.3s;
-    color: #1496BB;
+    color: #00b8e4;
 }
 
 #link_proj:hover {
-    text-decoration: underline #1496BB;
     transition: ease 0.3s;
-    color: #1496BB;
+    color: #00b8e4;
 }
 
 #apresentacao {
-    font-size: 30pt;
+    font-size: 25pt;
+    color: #eee;
 }
 
 #name {
-    color: #1496BB;
+    color: #00b8e4;
     font-size: 40pt;
 }
 
 #funcao {
-    font-size: 30pt;
+    font-size: 25pt;
+    color: #eee;
 }
 
 #name::after {
@@ -59,27 +62,19 @@ body {
     }
 }
 
-.img_home {
-    transform: scale(1.2);
-    transition: ease 0.3s;
-}
-
-#funcao {
-    font-size: 26pt;
-}
-
 #home {
-    background-color: #D3D3D3;
+    background-image: url(../images/back_home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #home_conteudo {
     display: flex;
-    height: 700px;
-    margin-top: 1%;
+    height: 100vh;
 }
 
 #div_apresentacao {
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
 [data-anime] {
@@ -88,11 +83,11 @@ body {
 }
 
 [data-anime="left"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
 }
 
 [data-anime="right"] {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(20px, 0, 0);
 }
 
 [data-anime].animate {
@@ -101,161 +96,90 @@ body {
 }
 
 #sobre_mim {
-    background-color: #DCDCDC;
-    padding: 30px;
-    height: 700px;
+    background-color: #000;
+    padding: 2%;
+    height: 100vh;
 }
 
 #sobre_mim_corpo {
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 #sobre_mim_titulo {
-    text-align: center;
+    color: #00b8e4;
 }
 
 #sobre_mim_conteudo {
     display: flex;
-    height: 400px;
 }
 
 #sobre_mim_img {
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 #sobre_mim_texto {
     font-size: 1.3em;
+    color: #eee;
 }
 
 #habilidades {
-    background-color: #D3D3D3;
-    height: 750px;
-    padding: 30px;
+    background-color: #060606;
+    height: 100vh;
+    padding: 5%;
 }
 
 #hab_titulo {
-    text-align: center;
+    color: #00b8e4;
 }
 
 #hab_corpo {
-    margin-top: 40px;
+    margin-top: 5%;
 }
 
 #hab_itens {
     display: flex;
 }
 
-.progress-title {
-    width: 100%;
-    height: auto;
+#hab_icones {
+    display: flex;
 }
 
-.progress-title h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0 0 10px;
+.card-body {
+    background-color: #000;
+    text-align: center;
 }
 
-.progress {
-    height: 20px;
-    margin-bottom: 20px;
-    overflow: visible;
-    position: relative;
-}
-
-.progress .progress-bar {
-    border: 1px;
-    border-radius: 20px;
-    animation: animate-positive 2s;
-}
-
-.progress .legenda {
-    border-radius: 0;
-}
-
-#html_bar {
-    background: #0000CD;
-}
-
-#css_bar {
-    background: #4169E1;
-}
-
-#js_bar {
-    background: #1E90FF;
-}
-
-#php_bar {
-    background: #4169E1;
-}
-
-#py_bar {
-    background: #1E90FF;
-}
-
-#bt_bar {
-    background: #1E90FF;
-}
-
-#ps_bar {
-    background: #0000CD;
-}
-
-#leg1 {
-    background: #00BFFF;
-}
-
-#leg2 {
-    background: #1E90FF;
-}
-
-#leg3 {
-    background: #4169E1;
-}
-
-#leg4 {
-    background: #0000CD;
-}
-
-@keyframes animate-positive {
-    0% {
-        width: 0;
-    }
+.card:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
 }
 
 #projetos {
-    background-color: #DCDCDC;
+    background-color: #000;
+    color: #00b8e4;
     text-align: center;
-    height: 600px;
-    padding: 30px;
+    height: 100vh;
+    padding: 1%;
 }
 
 #proj_corpo {
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 #proj_conteudo {
     display: flex;
+    margin-top: 3%;
+    color: #eee;
 }
 
 #proj_icones {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1%;
 }
 
-#proj_legenda {
-    font-size: 16pt;
-    margin-top: 10px;
-}
-
-.img_proj:hover {
-    transform: scale(1.2);
-    transition: ease 0.3s;
-}
-
-.p-modal .modal-content {
-    border-color: #1496BB;
+#modal_projetos {
+    color: #000;
+    border-color: #00b8e4;
     text-align: left;
 }
 
@@ -263,17 +187,32 @@ body {
     text-align: left;
 }
 
+.close {
+    color: #eee;
+}
+
+.close:hover {
+    color: #eee;
+}
+
 footer {
-    background-color: #1496BB;
+    background-color: #00b8e4;
     color: white;
+    height: 5vh;
+    margin: 0;
     text-align: center;
-    height: 30px;
 }
 
 @media screen and (max-width: 600px) {
+    #home {
+        background-image: url(../images/back_home.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+
     #home_conteudo {
         display: block;
-        height: 450px;
+        height: 500px;
     }
 
     #apresentacao {
@@ -281,7 +220,7 @@ footer {
     }
 
     #name {
-        color: #1496BB;
+        color: #00b8e4;
         font-size: 30pt;
     }
 
@@ -292,7 +231,7 @@ footer {
     #div_apresentacao {
         text-align: center;
         margin: auto;
-        margin-top: 150px;
+        margin-top: 50%;
     }
 
     #div_img_home {
@@ -300,7 +239,7 @@ footer {
     }
 
     #sobre_mim {
-        height: 800px;
+        height: 900px;
     }
 
     #sobre_mim_conteudo {
@@ -324,40 +263,57 @@ footer {
         height: 800px;
     }
 
+    #hab_itens_titulo {
+        display: none;
+    }
+
+    #hab_texto {
+        display: none;
+    }
+
     #hab_itens {
+        text-align: center;
         display: grid;
     }
 
+    #hab_icones {
+        display: block;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .itens {
+        display: flex;
+    }
+
+    .card:hover {
+        transform: scale(1);
+    }
+
     #projetos {
-        height: 800px;
+        height: 1000px;
+        text-align: center;
     }
 
-    #img_promogames {
-        width: 90%;
+    #proj_corpo {
+        margin-top: 20%;
     }
 
-    #img_agatetepe {
-        width: 80%;
-    }
-
-    #img_meuplay {
-        width: 70%;
+    #proj_conteudo {
+        display: grid;
     }
 
     #proj_icones {
         display: block;
-    }
-
-    #proj_corpo {
-        margin-top: 30px;
+        margin-left: 8%;
     }
 
     [data-anime="left"] {
-        transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
     }
 
     [data-anime="right"] {
-        transform: translate3d(10px, 0, 0);
+        transform: translate3d(5px, 0, 0);
     }
 
 }
