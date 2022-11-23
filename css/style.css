@@ -195,6 +195,53 @@ nav {
     color: #eee;
 }
 
+#contato {
+    background-color: #060606;
+    color: #00b8e4;
+    height: 70vh;
+    padding: 1%;
+}
+
+#cont_corpo {
+    margin-top: 3%;
+}
+
+#cont_itens {
+    display: flex;
+}
+
+#cont_titulo {
+    text-align: left;
+}
+
+.cont_info {
+    color: #eee;
+}
+
+.cont_titulo_info {
+    color: #00b8e4;
+}
+
+.cont_input {
+    border-color: #00b8e4;
+    background-color: #060606;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+}
+
+.cont_input:active,
+.cont_input:focus {
+    background-color: #060606;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+textarea {
+    color: #eee;
+}
+
 footer {
     background-color: #00b8e4;
     color: white;
@@ -315,5 +362,10 @@ footer {
     [data-anime="right"] {
         transform: translate3d(5px, 0, 0);
     }
+
+    #cont_itens {
+        display: block;
+    }
+
 
 }
