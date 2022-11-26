@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/Gotham-Font/GothamMedium.ttf') format('opentype')
+}
+
+@font-face {
+    font-family: 'gotham_black';
+    src: url('../fonts/Gotham-Font/Gotham-Bold.otf') format('opentype')
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,8 +17,17 @@ body {
     background-color: #000;
 }
 
+.btn-pagina {
+    font-family: 'gotham';
+}
+
+.btn-pagina:hover {
+    text-decoration: underline;
+}
+
 nav {
     opacity: .9;
+    font-family: 'gotham';
 }
 
 #link_home:hover {
@@ -34,16 +53,19 @@ nav {
 #apresentacao {
     font-size: 25pt;
     color: #eee;
+    font-family: 'gotham';
 }
 
 #name {
     color: #00b8e4;
     font-size: 40pt;
+    font-family: 'gotham_black';
 }
 
 #funcao {
     font-size: 25pt;
     color: #eee;
+    font-family: 'gotham';
 }
 
 #name::after {
@@ -96,21 +118,27 @@ nav {
 }
 
 #sobre_mim {
-    background-color: #000;
+    background-color: #111;
     padding: 2%;
     height: 100vh;
 }
 
 #sobre_mim_corpo {
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 #sobre_mim_titulo {
     color: #00b8e4;
+    border: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'gotham_black';
 }
 
 #sobre_mim_conteudo {
     display: flex;
+    font-family: 'gotham';
 }
 
 #sobre_mim_img {
@@ -125,38 +153,68 @@ nav {
 #habilidades {
     background-color: #060606;
     height: 100vh;
-    padding: 5%;
+    padding: 2%;
+}
+
+#hab_corpo {
+    margin-top: 4%;
 }
 
 #hab_titulo {
     color: #00b8e4;
-}
-
-#hab_corpo {
-    margin-top: 5%;
-}
-
-#hab_itens {
-    display: flex;
+    text-align: center;
+    font-family: 'gotham_black';
 }
 
 #hab_icones {
     display: flex;
+    margin-top: 3%;
+    justify-content: center;
 }
 
-.card-body {
-    background-color: #000;
+#hab_icones_cards {
+    display: flex;
+}
+
+#hab_texto_animacao {
     text-align: center;
 }
 
-.card:hover {
-    transform: scale(1.1);
+#hab_itens_titulo {
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'gotham_black';
+}
+
+#hab_texto {
+    text-align: left;
+    font-size: 12pt;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'gotham';
+}
+
+.hab_card {
+    background-color: #111;
+    text-align: center;
+}
+
+.hab_card {
+    border-width: 5px;
+    border-radius: 0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.hab_card:hover {
+    transform: scale(1.05);
     transition: ease 0.3s;
 }
 
 #projetos {
-    background-color: #000;
-    color: #00b8e4;
+    background-color: #111;
+    color: #eee;
     text-align: center;
     height: 100vh;
     padding: 1%;
@@ -169,22 +227,52 @@ nav {
 #proj_conteudo {
     display: flex;
     margin-top: 3%;
-    color: #eee;
+}
+
+#proj_titulo {
+    color: #00b8e4;
+    font-family: 'gotham_black';
 }
 
 #proj_icones {
     display: flex;
-    margin-top: 1%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.proj_card {
+    background-color: #060606;
+    border-radius: 0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 5px;
+    font-family: 'gotham';
+}
+
+.text-card {
+    font-family: 'gotham_black';
 }
 
 #modal_projetos {
-    color: #000;
-    border-color: #00b8e4;
     text-align: left;
 }
 
-#modal_conteudo2 {
-    text-align: left;
+.modal-body {
+    display: flex;
+}
+
+.modal_titulo {
+    font-family: 'gotham_black';
+    color: #00b8e4;
+}
+
+.modal_texto {
+    font-family: 'gotham';
+}
+
+.d-block {
+    width: 100%;
 }
 
 .close {
@@ -192,6 +280,13 @@ nav {
 }
 
 .close:hover {
+    color: #eee;
+}
+
+.btn-carossel {
+    width: 10%;
+    background-color: #060606;
+    opacity: .1;
     color: #eee;
 }
 
@@ -212,10 +307,12 @@ nav {
 
 #cont_titulo {
     text-align: left;
+    font-family: 'gotham_black';
 }
 
 .cont_info {
     color: #eee;
+    font-family: 'gotham';
 }
 
 .cont_titulo_info {
@@ -229,6 +326,8 @@ nav {
     border-left: none;
     border-right: none;
     border-radius: 0%;
+    color: #eee;
+    font-family: 'gotham';
 }
 
 .cont_input:active,
@@ -236,18 +335,31 @@ nav {
     background-color: #060606;
     outline: 0;
     box-shadow: 0 0 0 0;
+    color: #eee;
+}
+
+.swal-modal {
+    background-color: #060606;
+    border: #00b8e4 solid;
+    font-family: 'gotham_black';
+}
+
+.swal-title {
+    color: #eee;
 }
 
 textarea {
     color: #eee;
+    width: 100%;
 }
 
 footer {
     background-color: #00b8e4;
-    color: white;
+    color: #eee;
     height: 5vh;
     margin: 0;
     text-align: center;
+    font-family: 'gotham_black';
 }
 
 @media screen and (max-width: 600px) {
@@ -263,16 +375,16 @@ footer {
     }
 
     #apresentacao {
-        font-size: 25pt;
+        font-size: 20pt;
     }
 
     #name {
         color: #00b8e4;
-        font-size: 30pt;
+        font-size: 28pt;
     }
 
     #funcao {
-        font-size: 25pt;
+        font-size: 20pt;
     }
 
     #div_apresentacao {
@@ -294,7 +406,7 @@ footer {
     }
 
     #sobre_mim_corpo {
-        margin-top: 50px;
+        margin-top: 15%;
     }
 
     #sobre_mim_texto {
@@ -307,7 +419,11 @@ footer {
     }
 
     #habilidades {
-        height: 800px;
+        height: 1000px;
+    }
+
+    #hab_corpo {
+        margin-top: 15%;
     }
 
     #hab_itens_titulo {
@@ -329,6 +445,10 @@ footer {
         margin-left: 2%;
     }
 
+    .img_card {
+        width: 70%;
+    }
+
     .itens {
         display: flex;
     }
@@ -337,8 +457,12 @@ footer {
         transform: scale(1);
     }
 
+    #hab_icones_cards {
+        display: block;
+    }
+
     #projetos {
-        height: 1000px;
+        height: 1500px;
         text-align: center;
     }
 
@@ -355,6 +479,11 @@ footer {
         margin-left: 8%;
     }
 
+    .modal-body {
+        display: grid;
+    }
+
+
     [data-anime="left"] {
         transform: translate3d(-5px, 0, 0);
     }
@@ -363,9 +492,25 @@ footer {
         transform: translate3d(5px, 0, 0);
     }
 
+    #contato {
+        height: 700px;
+        text-align: center;
+    }
+
+    #cont_corpo {
+        margin-top: 10%;
+    }
+
+    #cont_titulo {
+        text-align: center;
+    }
+
     #cont_itens {
         display: block;
     }
 
-
+    #cont_info {
+        margin: 0;
+        padding: 0;
+    }
 }
