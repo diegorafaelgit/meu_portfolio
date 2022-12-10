@@ -127,6 +127,44 @@ $('#card_jquery').on('mouseout', function () {
     $('#hab_texto').text('');
 });
 
+$('#img_linkedin').on('mouseover', function () {
+    $('#img_linkedin').attr('src', 'images/linkedin_logo_white.png')
+});
+$('#img_linkedin').on('mouseout', function () {
+    $('#img_linkedin').attr('src', 'images/linkedin_logo.png')
+});
+$('#img_github').on('mouseover', function () {
+    $('#img_github').attr('src', 'images/github_logo_white.png')
+});
+$('#img_github').on('mouseout', function () {
+    $('#img_github').attr('src', 'images/github_logo.png')
+});
+
+$('#linkedin_logo_cont').on('mouseover', function () {
+    $('#linkedin_logo_cont').attr('src', 'images/linkedin_logo.png')
+});
+$('#linkedin_logo_cont').on('mouseout', function () {
+    $('#linkedin_logo_cont').attr('src', 'images/linkedin_logo_white.png')
+});
+$('#git_logo_cont').on('mouseover', function () {
+    $('#git_logo_cont').attr('src', 'images/github_logo.png')
+});
+$('#git_logo_cont').on('mouseout', function () {
+    $('#git_logo_cont').attr('src', 'images/github_logo_white.png')
+});
+$('#whats_logo').on('mouseover', function () {
+    $('#whats_logo').attr('src', 'images/whats_logo_azul.png')
+});
+$('#whats_logo').on('mouseout', function () {
+    $('#whats_logo').attr('src', 'images/whats_logo.png')
+});
+$('#insta_logo').on('mouseover', function () {
+    $('#insta_logo').attr('src', 'images/insta_logo_azul.png')
+});
+$('#insta_logo').on('mouseout', function () {
+    $('#insta_logo').attr('src', 'images/insta_logo.png')
+});
+
 // Efeito de máquina de escrever no nome
 function typeWrite(elemento) {
     const textoArray = elemento.innerHTML.split('');
