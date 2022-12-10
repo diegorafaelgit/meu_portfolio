@@ -72,7 +72,7 @@ $('#card_js').on('mouseout', function () {
 });
 $('#card_bt').on('mouseover', function () {
     $('#hab_itens_titulo').text('Bootstrap');
-    $('#hab_texto').text('Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.');
+    $('#hab_texto').text('Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript.');
 });
 $('#card_bt').on('mouseout', function () {
     $('#hab_itens_titulo').text('* Passe o mouse em cima do logo para saber mais sobre a ferramenta *');
@@ -120,7 +120,7 @@ $('#card_figma').on('mouseout', function () {
 });
 $('#card_jquery').on('mouseover', function () {
     $('#hab_itens_titulo').text('jQuery');
-    $('#hab_texto').text('jQuery é uma biblioteca livre que contém funções da linguagem de programação JavaScript que interage com páginas em HTML, desenvolvida para simplificar os scripts executados/interpretados no navegador de internet do usuário.');
+    $('#hab_texto').text('jQuery é uma biblioteca livre que contém funções da linguagem de programação JavaScript que interage com páginas em HTML, desenvolvida para simplificar os scripts.');
 });
 $('#card_jquery').on('mouseout', function () {
     $('#hab_itens_titulo').text('* Passe o mouse em cima do logo para saber mais sobre a ferramenta *');

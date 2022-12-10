@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'gotham';
-    src: url('../fonts/Gotham-Font/GothamMedium.ttf') format('opentype')
+    font-family: 'poppins';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('opentype')
 }
 
 @font-face {
-    font-family: 'gotham_black';
-    src: url('../fonts/Gotham-Font/Gotham-Bold.otf') format('opentype')
+    font-family: 'poppins_light';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('opentype')
 }
 
 html {
@@ -13,12 +13,12 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins_light';
     background-color: #000;
 }
 
 .btn-pagina {
-    font-family: 'gotham';
+    font-family: 'poppins';
 }
 
 .btn-pagina:hover {
@@ -27,7 +27,7 @@ body {
 
 nav {
     opacity: .9;
-    font-family: 'gotham';
+    font-family: 'poppins';
 }
 
 #link_home:hover {
@@ -53,19 +53,19 @@ nav {
 #apresentacao {
     font-size: 25pt;
     color: #eee;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 #name {
     color: #00b8e4;
     font-size: 40pt;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 #funcao {
     font-size: 25pt;
     color: #eee;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 #name::after {
@@ -133,12 +133,12 @@ nav {
     border-top: none;
     border-left: none;
     border-right: none;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 #sobre_mim_conteudo {
     display: flex;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 #sobre_mim_img {
@@ -163,7 +163,7 @@ nav {
 #hab_titulo {
     color: #00b8e4;
     text-align: center;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 #hab_icones {
@@ -183,15 +183,16 @@ nav {
 #hab_itens_titulo {
     font-size: 18pt;
     text-align: center;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 #hab_texto {
     text-align: left;
     font-size: 12pt;
     width: 50%;
+    text-align: justify;
     margin-left: 25%;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 .hab_card {
@@ -231,7 +232,7 @@ nav {
 
 #proj_titulo {
     color: #00b8e4;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 #proj_icones {
@@ -247,11 +248,11 @@ nav {
     border-left: none;
     border-right: none;
     border-width: 5px;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
-.text-card {
-    font-family: 'gotham_black';
+.card_titulo {
+    font-family: 'poppins';
 }
 
 #modal_projetos {
@@ -263,12 +264,12 @@ nav {
 }
 
 .modal_titulo {
-    font-family: 'gotham_black';
+    font-family: 'poppins';
     color: #00b8e4;
 }
 
 .modal_texto {
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 .d-block {
@@ -307,12 +308,12 @@ nav {
 
 #cont_titulo {
     text-align: left;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 .cont_info {
     color: #eee;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 .cont_titulo_info {
@@ -327,7 +328,7 @@ nav {
     border-right: none;
     border-radius: 0%;
     color: #eee;
-    font-family: 'gotham';
+    font-family: 'poppins_light';
 }
 
 .cont_input:active,
@@ -341,7 +342,7 @@ nav {
 .swal-modal {
     background-color: #060606;
     border: #00b8e4 solid;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 .swal-title {
@@ -359,7 +360,7 @@ footer {
     height: 5vh;
     margin: 0;
     text-align: center;
-    font-family: 'gotham_black';
+    font-family: 'poppins';
 }
 
 @media screen and (max-width: 600px) {
@@ -375,7 +376,7 @@ footer {
     }
 
     #apresentacao {
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     #name {
@@ -384,7 +385,7 @@ footer {
     }
 
     #funcao {
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     #div_apresentacao {
@@ -482,7 +483,6 @@ footer {
     .modal-body {
         display: grid;
     }
-
 
     [data-anime="left"] {
         transform: translate3d(-5px, 0, 0);
